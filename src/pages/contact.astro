@@ -17,7 +17,8 @@ import SectionIntro from '../components/SectionIntro.astro';
         </div>
       </div>
       <div class="contact-card">
-        <form method="POST" action="https://formspree.io/f/placeholder">
+        <form method="POST" action="https://formspree.io/f/mkopynwz">
+          <input type="hidden" name="_subject" value="New consultation request — North Texas Property Transition Services" />
           <div class="form-grid">
             <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required /></div>
             <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
@@ -26,7 +27,7 @@ import SectionIntro from '../components/SectionIntro.astro';
           </div>
           <div class="field" style="margin-top:1rem;"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what kind of transition you are navigating and what concerns you most right now." required></textarea></div>
           <div class="button-row" style="margin-top:1rem;"><button class="button primary" type="submit">Schedule a Private Consultation</button></div>
-          <p class="section-subtitle" style="margin-top:1rem;">Form submissions currently use a placeholder Formspree endpoint until a live consultation inbox is connected.</p>
+          <p class="section-subtitle" style="margin-top:1rem;">Form submissions now route directly to our private consultation inbox via Formspree.</p>
         </form>
       </div>
     </div>
