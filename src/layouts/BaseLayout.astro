@@ -1,0 +1,50 @@
+---
+import '../styles/global.css';
+const { title, description, pathname = '/' } = Astro.props;
+const site = 'https://northtexaspropertytransition.com';
+const canonical = new URL(pathname, site).toString();
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/how-it-works', label: 'How It Works' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand">
+          <span class="brand-name">North Texas Property Transition Services</span>
+          <span class="brand-tagline">Inherited Home &amp; Senior Transition Specialists</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+          {nav.map((item) => (
+            <a href={item.href} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</a>
+          ))}
+          <a class="button primary" href="/contact">Schedule a Private Consultation</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-name">North Texas Property Transition Services</div>
+          <p class="footer-copy">Serving families across Dallas, Fort Worth, Plano, Frisco, McKinney, Allen, Arlington, Keller, Grand Prairie, Weatherford, and surrounding North Texas communities.</p>
+        </div>
+        <div class="footer-copy">Professional. Calm. Structured. Empathetic.</div>
+      </div>
+    </footer>
+  </body>
+</html>

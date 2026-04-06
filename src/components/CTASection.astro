@@ -1,0 +1,20 @@
+---
+const { title, body } = Astro.props;
+---
+<section>
+  <div class="container">
+    <div class="panel split-grid">
+      <div>
+        <div class="eyebrow">Private Consultation</div>
+        <h2 class="section-title">{title}</h2>
+      </div>
+      <div>
+        <p class="section-subtitle">{body}</p>
+        <div class="button-row">
+          <a class="button primary" href="/contact">Schedule a Private Consultation</a>
+          <a class="button secondary" href="/how-it-works">Learn How It Works</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

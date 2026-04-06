@@ -1,11 +1,96 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionIntro from '../components/SectionIntro.astro';
+import CTASection from '../components/CTASection.astro';
 ---
+<BaseLayout title="North Texas Property Transition Services | Inherited Home & Senior Transition Specialists" description="Sell a parent’s or inherited house in North Texas with coordinated cleanout and property transition planning." pathname="/">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Inherited Home &amp; Senior Transition Specialists</div>
+        <h1>Sell a Parent’s or Inherited House in North Texas — Even If It Needs Cleanout or Repairs</h1>
+        <p class="lead">Whether you are helping a parent transition into assisted living or managing an inherited property, we coordinate professional cleanout and property transition planning from start to finish — so you can sell with clarity and confidence.</p>
+        <div class="button-row">
+          <a class="button primary" href="/contact">Schedule a Private Consultation</a>
+          <a class="button secondary" href="/how-it-works">Learn How It Works</a>
+        </div>
+        <div class="badge-strip">
+          <span class="badge">100+ Verified 5-Star Reviews Combined</span>
+          <span class="badge">Serving Dallas–Fort Worth and Surrounding Communities</span>
+          <span class="badge">Trusted by Local Estate &amp; Senior Transition Professionals</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="eyebrow">Three-step process</div>
+        <div class="steps" style="grid-template-columns:1fr; margin-top:1rem;">
+          <div class="step-card"><strong>1. Private Consultation</strong><p>We start with your family’s situation, the property condition, and the practical decisions that need to be made.</p></div>
+          <div class="step-card"><strong>2. Cleanout &amp; Property Planning</strong><p>We coordinate cleanout, remediation, and property strategy together so the plan is clear before extra work begins.</p></div>
+          <div class="step-card"><strong>3. Sale &amp; Transition</strong><p>With the right plan in place, families can move through the transition with less uncertainty and more confidence.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<Layout>
-	<Welcome />
-</Layout>
+  <section>
+    <div class="container split-grid">
+      <div>
+        <SectionIntro eyebrow="Empathy" title="Major Life Transitions Are Hard Enough." subtitle="Whether a loved one has passed or is preparing to move into assisted living, memory care, or a family member’s home, managing the house can feel overwhelming." />
+      </div>
+      <div class="panel">
+        <ul class="list">
+          <li>Years of belongings.</li>
+          <li>Deferred maintenance.</li>
+          <li>Hoarding conditions.</li>
+          <li>Uncertainty about what to keep, remove, repair, or sell.</li>
+        </ul>
+        <p class="section-subtitle" style="margin-top:1rem;">Most families assume they need to coordinate cleanout first and figure out the property later. In reality, planning both together from the beginning often prevents unnecessary work and creates a smoother, more profitable outcome. We provide one clear plan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container split-grid">
+      <div class="panel">
+        <div class="eyebrow">Bridge</div>
+        <h2 class="section-title">Do You Need to Fully Clean Out the House Before Selling?</h2>
+        <p class="section-subtitle">Many families believe a hoarded or heavily cluttered house must be completely emptied before it can be sold.</p>
+        <p class="section-subtitle">Coordinating cleanout and property strategy together often prevents unnecessary labor, duplicate expenses, and over-preparing the home.</p>
+        <p class="section-subtitle">Before investing significant time or money into a full cleanout, it is worth understanding what truly needs to be done — and what may not be necessary. That’s where a coordinated transition plan makes the difference.</p>
+      </div>
+      <div class="panel">
+        <div class="eyebrow">Why families sell</div>
+        <ul class="list">
+          <li>Ongoing property taxes, insurance, and utilities</li>
+          <li>Deferred maintenance or costly repairs</li>
+          <li>Vacant home risks and liability concerns</li>
+          <li>Funding assisted living or memory care</li>
+          <li>Simplifying estate distribution between siblings</li>
+          <li>Avoiding long-term property management stress</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <SectionIntro eyebrow="Coordinated approach" title="One plan. Three aligned parts." subtitle="Every property — and every family situation — is different. The goal is not a one-size-fits-all process. The goal is a clear path forward." />
+      <div class="cards">
+        <div class="info-card"><h3>Professional Cleanout &amp; Remediation</h3><p>Compassionate hoarding cleanout, biohazard remediation, and full contents removal handled by trusted North Texas specialists. Discreet, respectful, and thorough.</p></div>
+        <div class="info-card"><h3>Property Evaluation &amp; Transition Planning</h3><p>Clear guidance on whether to sell in its current condition, prepare for market, or make selective updates.</p></div>
+        <div class="info-card"><h3>Inherited &amp; Senior Transition Property Support</h3><p>We assist families navigating inherited houses, probate property sales, senior living transitions, downsizing and relocation, out-of-state property management, and homes affected by hoarding or significant deferred maintenance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <SectionIntro eyebrow="Common situations" title="Families often reach out when they are facing some version of the same difficult situation." subtitle="If any of these sound familiar, the first step is simply getting a structured plan." />
+      <div class="two-col">
+        <div class="panel"><ul class="list"><li>A parent moving into assisted living</li><li>Preparing a house for sale during probate</li><li>Downsizing after a health event</li></ul></div>
+        <div class="panel"><ul class="list"><li>Managing property from out of state</li><li>Clearing a hoarder house before sale</li><li>Coordinating estate property decisions between siblings</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection title="Start with a private conversation and a clear plan." body="If your family is facing an inherited home sale or a parent’s move into senior living, we can help you understand the smartest next step before you spend unnecessary time, labor, or money." />
+</BaseLayout>
