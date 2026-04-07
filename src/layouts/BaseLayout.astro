@@ -2,6 +2,7 @@
 import '../styles/global.css';
 const { title, description, pathname = '/' } = Astro.props;
 const site = 'https://northtexaspropertytransition.com';
+const ogImage = new URL('/og-image.svg', site).toString();
 const canonical = new URL(pathname, site).toString();
 const nav = [
   { href: '/', label: 'Home' },
@@ -17,8 +18,20 @@ const nav = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <link rel="canonical" href={canonical} />
-  </head>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      <!-- Analytics placeholder: add Google Analytics / Google tag when measurement ID is available. -->
+    <!-- Search Console note: verify both the apex and redirect domains after final DNS cleanup. -->
+</head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
