@@ -14,3 +14,6 @@ These site images were added using CC0 / public-domain sources only.
 - `clean-bedroom-after.jpg`
   - Source: https://commons.wikimedia.org/wiki/File:Mount_Washington_Tavern_Bedroom_(134da522-5404-4458-80d5-5572476ce234).jpg
   - License: Public domain
+- `attached-photo.jpeg`
+  - Source: `/home/austin/Downloads/AdobeStock_850568516.jpeg`
+  - License/status: User-provided local file from Downloads
