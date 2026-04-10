@@ -11,3 +11,6 @@ These site images were added using CC0 / public-domain sources only.
 - `passport-documents-desk.jpg`
   - Source: https://commons.wikimedia.org/wiki/File:Passport_documents_desk_(Unsplash).jpg
   - License: CC0 (via Wikimedia Commons metadata)
+- `clean-bedroom-after.jpg`
+  - Source: https://commons.wikimedia.org/wiki/File:Mount_Washington_Tavern_Bedroom_(134da522-5404-4458-80d5-5572476ce234).jpg
+  - License: Public domain

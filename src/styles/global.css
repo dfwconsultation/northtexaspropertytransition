@@ -187,3 +187,35 @@ textarea { min-height: 160px; resize: vertical; }
     grid-column: span 1;
   }
 }
+
+.before-after-card {
+  padding: 1.25rem;
+}
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.9rem;
+}
+.before-after-grid figure {
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+.before-after-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(216, 204, 192, 0.85);
+}
+.before-after-grid figcaption {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+@media (max-width: 960px) {
+  .before-after-grid {
+    grid-template-columns: 1fr;
+  }
+}
