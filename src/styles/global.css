@@ -145,13 +145,6 @@ textarea { min-height: 160px; resize: vertical; }
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
-.hero-photo-note {
-  padding: 1.25rem 1.4rem 1.5rem;
-}
-.hero-photo-note p {
-  margin: 0.5rem 0 0;
-  color: var(--muted);
-}
 @media (max-width: 960px) {
   .hero-focused {
     padding-top: 4.5rem;
